@@ -17,8 +17,8 @@ export default {
    * @description api请求基础路径
    */
   baseUrl: {
-    dev: 'https://www.easy-mock.com/mock/5add9213ce4d0e69998a6f51/iview-admin/',
-    pro: 'https://produce.com'
+    dev: 'http://api.pgleon.com/',
+    pro: 'http://api.pgleon.com/'
   },
   /**
    * @description 默认打开的首页的路由name值，默认为home
@@ -32,5 +32,11 @@ export default {
       showInHeader: true, // 设为false后不会在顶部显示错误日志徽标
       developmentOff: true // 设为true后在开发环境不会收集错误信息，方便开发中排查错误
     }
-  }
+  },
+  signConfig: {
+    deviceId: '',
+    signVersion: 'mall-Android-1.0.0',
+    originKey: '1l-l.0d1.i01ll1.001l10'
+  },
+  baseURLL: 'http://api.pgleon.com/'
 }

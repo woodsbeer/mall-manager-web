@@ -1,12 +1,12 @@
 import axios from '@/libs/api.request'
-
+import request from '@/libs/request'
 export const login = ({ userName, password }) => {
   const data = {
     userName,
     password
   }
-  return axios.request({
-    url: 'login',
+  return request({
+    url: '/user/admin/login',
     data,
     method: 'post'
   })
